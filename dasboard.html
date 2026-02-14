@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Sarvam.ai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav>
+    <h2>🌸 Sarvam.ai</h2>
+    <a href="add-transaction.html">Add Transaction</a>
+    <a href="budget.html">Budget</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Total Income ₹</h3>
+        <p id="totalIncome">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Expense ₹</h3>
+        <p id="totalExpense">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Balance ₹</h3>
+        <p id="balance">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Financial Health Score</h3>
+        <p id="score">0</p>
+        <p id="status"></p>
+    </div>
+
+    <div class="card">
+        <h3>Smart Tips</h3>
+        <p id="tips"></p>
+    </div>
+
+    <div class="card">
+        <h3>Last 5 Transactions</h3>
+        <ul id="transactions"></ul>
+    </div>
+
+    <canvas id="pieChart"></canvas>
+    <canvas id="lineChart"></canvas>
+    <canvas id="barChart"></canvas>
+
+</div>
+
+<script src="app.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
